@@ -21,3 +21,12 @@ sudo apt install python3-pip -y
 
 И для подключения к нашему серверу скопируем ссылку, которая находиться напротив forwarding
 
+Установим ssh: sudo apt install ssh
+
+Установим openssh: sudo apt install openssh-server
+
+Запустим: sudo systemctl start ssh
+
+Запустим ngrok: ./ngrok tcp 22 (22 тк ssh работает на 22 порту)
+
+И дадим ссылку напротив forwarding, только вместо tcp:// пишем ssh {имя} @{ссылка} -p{порт}
