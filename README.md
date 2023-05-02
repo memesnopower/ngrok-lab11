@@ -6,7 +6,18 @@
 
 Подключим токен: ./ngrok config add-authtoken ...
 
-Запустим ngrok: ./ngrok tcp 9999 
+
+Установим python: 
+
+sudo apt install python3 -y
+
+sudo apt install python3-pip -y
+
+Создадим папку и сделаем там файл > index.html, а также пропишем python3 -m http.server для запуска локального сервера
+
+Запустим ngrok: ./ngrok http 8000 
 
 ![image](https://user-images.githubusercontent.com/115490701/235741848-505202c6-ec80-4974-ad46-a991fc519642.png)
+
+И для подключения к нашему серверу скопируем ссылку, которая находиться напротив forwarding
 
