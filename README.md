@@ -1,8 +1,12 @@
 # Лабораторная работа №11
 
-Скачаем ngrok с официального сайта 
+Установим ngrok через: wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz
 
-![image](https://user-images.githubusercontent.com/115490701/235738829-9d77f752-2f21-4a22-bad2-e667d18e7406.png)
+Разархивируем архив: tar -xf ngrok-v3-stable-linux-386.tgz
 
-И разархивируем его tar -xf
+Подключим токен: ./ngrok config add-authtoken ...
+
+Запустим ngrok: ./ngrok tcp 9999 
+
+![image](https://user-images.githubusercontent.com/115490701/235741848-505202c6-ec80-4974-ad46-a991fc519642.png)
 
